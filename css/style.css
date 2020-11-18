@@ -1,0 +1,76 @@
+/* SE BOOSSTRAP NON E' ATTIVO RICORDA: */
+
+/* *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+} */
+
+/* CSS */
+ img{
+   margin:20px;
+   width: 50%;
+ }
+
+ input{
+   border-radius: 5px;
+   width: 80%;
+   height: 50px;
+   margin: 20px;
+   padding: 5px;
+   padding-left: 30px;
+   font-size: 20px;
+   font-weight: 300;
+
+ }
+
+ .col > button{
+   font-size: 20px;
+   font-weight: 900;
+   border-radius: 5px;
+   width: 20%;
+   height: 50px;
+   margin: 20px;
+   padding: 5px;
+   color: white;
+   border:none;
+   background-color: #001533;
+ }
+
+ .row.box{
+   border-radius: 5px;
+   background-color:#e2e2e2;
+   width: 100%;
+   padding: 10px 0;
+
+ }
+
+ .input_list{
+   width: 100%;
+   border-bottom: 1px solid black;
+ }
+
+
+
+ li{
+   list-style: none;
+ }
+
+ h3{
+   margin: 20px;
+   font-size: 20px;
+   font-weight: 600;
+   width: 80%;
+   display: inline-block;
+ }
+
+ li > button{
+   text-align: right;
+   border: none;
+   font-weight: 900;
+   font-size: 18px;
+   background-color: transparent;
+   margin-right: 10px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+ }
