@@ -40,16 +40,26 @@
             <input type="text" name="text" placeholder="Cosa devi fare?" value="" v-model='textInput'>
             <button @click='inputInArray' type="button" name="button"> Aggiungi </button>
           </div>
-          <div class="row box">
-            <div class="col ">
-              <ul>
-                <li class="input_list" v-for='(el,index) in inputToDo' v-model='index' >
-                  <h3> {{el}}</h3>
-                  <button @click='removeInput(index)' type="button" name="button"> X </button>
-                </li>
-              </ul>
-            </div>
-        </div>
+          <div class="container">
+            <div class="row ">
+              <div class="col box d-flex justify-content-center align-items-center ">
+                <ul>
+                  <h2>{{message}}</h2>
+                  <li
+                   :class='{myActive:active[index]}'
+                   class="input_list"
+                   v-for='(el,index) in inputToDo'
+                   v-model='index'
+                   @click='activate(index)'
+                   >
+                    <h3> {{el}}</h3>
+                    <button @click.stop='removeInput(index)' type="button" name="button"> X </button>
+                  </li>
+                </ul>
+              </div>
+          </div>
+
+          </div>
       </div>
 
     </div>
