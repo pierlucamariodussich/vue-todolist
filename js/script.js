@@ -12,6 +12,7 @@ const newApp = new Vue({
          this.message = 'Attento! Inserisci un ToDo'
        } else {
          this.inputToDo.push(this.textInput);
+         this.textInput = '';
          this.active.push(false);
          this.message = " Hai " + this.inputToDo.length + " cose da fare"
        }
